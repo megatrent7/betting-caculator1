@@ -1,14 +1,14 @@
-#find 25% of bankroll for betting
-number_1 = int(input('Enter your Bankroll: '))
-number_2 = int(input('Enter 4: '))
+# Find 25% of bankroll for betting
+bankroll = int(input('Enter your Bankroll: '))
+percent = 0.25
 
-print(number_1 / number_2)
+bet_amount = bankroll * percent
 
+print(f'{percent * 100}% of your bankroll is {bet_amount}')
 
-#muiply by winning odds
-number_1 = input('enter percent:')
-number_2 = input('enter odds:')
+# Multiply bet amount by winning odds
+winning_odds = input('Enter winning odds:')
 
-sum = float(number_1) * float(number_2)
+total_winnings = bet_amount * float(winning_odds)
 
-print('the sum of {0} and {1} is {2}'.format(number_1, number_2, sum))
+print(f'Your total winnings are {total_winnings}')
